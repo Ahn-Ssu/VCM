@@ -1,5 +1,7 @@
-# anonymized_VCM
-for reproducibility of VCM
+# Volumetric Conditioning Module to Control Pretrained Diffusion Models for 3D Medical Images
+Anonymous WACV Applications Track submission Paper ID 1551
+
+for reproducibility of Volumetric Conditioning Module (VCM)
 
 
 ## installation
