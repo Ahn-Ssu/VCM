@@ -18,6 +18,7 @@ python setup.py install
 ### b. accelerate setup
 
 run `accelerate config` command in your shell for accelerate configuration
+
 _The following is an example_
 
 ```
@@ -52,11 +53,15 @@ locate them in the `models` directory
 
 You can train your VCM by modifying `acceler-VCM-newSemantics.py` and `newSemantics_loader.py` with your own conditions.
 
-run the train code command
-```CUDA_VISIBLE_DEVICES='0,1,2,3' accelerate launch --num_processes 4 --multi_gpu --gpu_ids='all' --main_process_port 29500 acceler-VCM-newSemantics.py```
+run the train code command:
+
+```
+CUDA_VISIBLE_DEVICES='0,1,2,3' accelerate launch --num_processes 4 --multi_gpu --gpu_ids='all' --main_process_port 29500 acceler-VCM-newSemantics.py
+```
 
 
 ## 4. train VCM
 
 You can perform sampling through the condition located in the `data/I-demo` folder via `VCM_sampling.ipynb`. 
+
 Also, you can load and perform sampling of the VCM learned in another condition by referring to the code.
