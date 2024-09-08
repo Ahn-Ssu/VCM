@@ -17,7 +17,7 @@ from generative.networks.schedulers import DDPMScheduler
 
 from cosine_annealing_warmup import CosineAnnealingWarmupRestarts
 
-from model.mcm import VCM_enc
+from model.vcm import VCM_enc
 from config.model_config import defaultCFG
 from newSemantics_loader import MRI_dataset
 
