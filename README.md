@@ -2,13 +2,13 @@
 Anonymous WACV Applications Track submission Paper ID 1551 for reproducibility of Volumetric Conditioning Module (VCM)
 
 ![versatile_VCM_examples](./examples/versatile_VCM.png)
-![LV_guidance_viz](./examples/LV-spatialcontrol.gif)
-![multimodal_guidance_viz](./examples/Multimodal_spatialcontrol.gif)
+<img src="./examples/LV-spatialcontrol.gif" alt="LV Guidance Viz" width="400"/>
+<img src="./examples/Multimodal_spatialcontrol.gif" alt="Multimodal Guidance Viz" width="400"/>
 ![VCM_details](./examples/VCM_details.png)
 
 ## 1. installation
 
-### a. enviroment setup
+### a. environment setup
 ```
 conda create -n vcm python=3.12 -y
 conda activate vcm
