@@ -3,7 +3,7 @@ Anonymous WACV Applications Track submission Paper ID 1551 for reproducibility o
 
 ![versatile_VCM_examples](./examples/versatile_VCM.png)
 ![LV_guidance_viz](./examples/LV-spatialcontrol.gif)
-![multimodal_guidance_viz](./examples/Multimodal-spatialcontrol.gif)
+![multimodal_guidance_viz](./examples/Multimodal_spatialcontrol.gif)
 ![VCM_details](./examples/VCM_details.png)
 
 ## 1. installation
@@ -18,6 +18,7 @@ python setup.py install
 ### b. accelerate setup
 
 run `accelerate config` command in your shell for accelerate configuration
+_The following is an example_
 
 ```
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -42,3 +43,20 @@ accelerate configuration saved at /root/.cache/huggingface/accelerate/default_co
 ```
 
 ## 2. donwload weights
+
+By using `models/large_files.yml`, donwload the weights for BrainLDM and VCM.
+locate them in the `models` directory
+
+
+## 3. train VCM
+
+You can train your VCM by modifying `acceler-VCM-newSemantics.py` and `newSemantics_loader.py` with your own conditions.
+
+run the train code command
+```CUDA_VISIBLE_DEVICES='0,1,2,3' accelerate launch --num_processes 4 --multi_gpu --gpu_ids='all' --main_process_port 29500 acceler-VCM-newSemantics.py```
+
+
+## 4. train VCM
+
+You can perform sampling through the condition located in the `data/I-demo` folder via `VCM_sampling.ipynb`. 
+Also, you can load and perform sampling of the VCM learned in another condition by referring to the code.
