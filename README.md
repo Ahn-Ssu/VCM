@@ -44,7 +44,7 @@ accelerate configuration saved at /root/.cache/huggingface/accelerate/default_co
 
 ## 2. donwload weights
 
-By using `models/large_files.yml`, donwload the weights for BrainLDM and VCM.
+By using `models/large_files.yml`, donwload the weights for BrainLDM (53M for `autoencoder.pth` and 2.1G for `diffusion_model.path`) and VCM (173M).
 locate them in the `models` directory
 
 
