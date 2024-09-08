@@ -57,17 +57,17 @@ print(f'\t BZ = {BZ}')
 
 print('model construction, load the weights')
 autoencoder = AutoencoderKL(**cfg.get_AE_CFG())
-AE_weight_path = '/root/vcm/VCM/weights/autoencoder.pth' # the AE of brainLDM
+AE_weight_path = 'weights/autoencoder.pth' # the AE of brainLDM
 autoencoder.load_state_dict(torch.load(AE_weight_path, map_location='cpu'))
 print(f"\t AE done")
 
 diffusion = DiffusionModelUNet(**cfg.get_DM_CFG())
-Diff_weight_path = '/root/vcm/VCM/weights/diffusion_model.pth' # brainLDM
+Diff_weight_path = 'weights/diffusion_model.pth' # brainLDM
 diffusion.load_state_dict(torch.load(Diff_weight_path, map_location='cpu'))
 print(f"\t Diffusion done")
 
 VCM_enc_CFG, enc_CFG = cfg.get_VCM_enc_CFG()
-vcm = VCM_enc(out_dim=3, diff_CFG=VCM_enc_CFG, enc_CFG=enc_CFG)
+vcm = VCM(out_dim=3, diff_CFG=VCM_enc_CFG, enc_CFG=enc_CFG)
 print(f"\t VCM done")
 
 
