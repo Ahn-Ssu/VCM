@@ -12,12 +12,12 @@ Anonymous WACV Applications Track submission Paper ID 1551 for reproducibility o
 ```
 conda create -n vcm python=3.12 -y
 conda activate vcm
-python setup.py install
+sh setup.sh
 ```
 
 ### b. accelerate setup
 
-run `accelerate config` command in your shell for accelerate configuration
+run `accelerate config` command in your shell for the accelerate configuration
 
 _The following is an example_
 
@@ -43,9 +43,10 @@ bf16
 accelerate configuration saved at /root/.cache/huggingface/accelerate/default_config.yaml
 ```
 
-## 2. donwload weights
+## 2. download weights
 
-By using `models/large_files.yml`, donwload the weights for BrainLDM (53M for `autoencoder.pth` and 2.1G for `diffusion_model.path`) and VCM (173M).
+By using `models/large_files.yml`, download the weights for BrainLDM (53M for `autoencoder.pth` and 2.1G for `diffusion_model.path`) and VCM (173M).
+
 locate them in the `models` directory
 
 
