@@ -1,5 +1,5 @@
 # Volumetric Conditioning Module to Control Pretrained Diffusion Models for 3D Medical Images
-Anonymous WACV Applications Track submission Paper ID 1551 for reproducibility of Volumetric Conditioning Module (VCM)
+For reproducibility of Volumetric Conditioning Module (VCM) @ WACV 2025
 
 ![versatile_VCM_examples](./examples/versatile_VCM.png)
 <img src="./examples/LV-spatialcontrol.gif" alt="LV Guidance Viz" width="400"/>
