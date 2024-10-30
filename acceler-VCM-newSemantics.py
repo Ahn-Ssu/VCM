@@ -175,7 +175,7 @@ for epoch in range(n_epochs):
                                     timesteps=t,
                                     context=cond)
         
-        # 7. feed the diffusion priors and novel conditions into MCM networks via concat and get a gamma_t (scale) and a beta_t (shift)
+        # 7. feed the diffusion priors and novel conditions into VCM networks via concat and get a gamma_t (scale) and a beta_t (shift)
         gamma_t, beta_t = vcm(x=torch.cat([z_t, epsilon_t], dim=1),
                             y=label,
                             timesteps=t)
