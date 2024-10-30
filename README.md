@@ -1,11 +1,13 @@
 # Volumetric Conditioning Module to Control Pretrained Diffusion Models for 3D Medical Images
 For reproducibility of Volumetric Conditioning Module (VCM) @ WACV 2025
+[[paper](https://arxiv.org/pdf/2410.21826)][[arXiv](https://arxiv.org/abs/2410.21826)]
+
 
 ![versatile_VCM_examples](./examples/versatile_VCM.png)
 <img src="./examples/LV-spatialcontrol.gif" alt="LV Guidance Viz" width="400"/>
 <img src="./examples/Multimodal_spatialcontrol.gif" alt="Multimodal Guidance Viz" width="400"/>
 ![VCM_details](./examples/VCM_details-1.png)
-![paper](https://arxiv.org/pdf/2410.21826)![arXiv](https://arxiv.org/abs/2410.21826)
+
 ## 1. installation
 
 ### a. environment setup
