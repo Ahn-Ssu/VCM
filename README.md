@@ -4,7 +4,7 @@ For reproducibility of Volumetric Conditioning Module (VCM) @ WACV 2025
 ![versatile_VCM_examples](./examples/versatile_VCM.png)
 <img src="./examples/LV-spatialcontrol.gif" alt="LV Guidance Viz" width="400"/>
 <img src="./examples/Multimodal_spatialcontrol.gif" alt="Multimodal Guidance Viz" width="400"/>
-![VCM_details](./examples/VCM_details.png)
+![VCM_details](./examples/VCM_details-1.png)
 
 ## 1. installation
 
