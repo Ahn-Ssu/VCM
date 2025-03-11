@@ -68,3 +68,18 @@ CUDA_VISIBLE_DEVICES='0,1,2,3' accelerate launch --num_processes 4 --multi_gpu -
 You can perform sampling through the condition located in the `data/I-demo` folder via `VCM_sampling.ipynb`. 
 
 Also, you can load and perform sampling of the VCM learned in another condition by referring to the code.
+
+
+
+# Citation
+If you want to refer this work, please use the following information (bibtex).
+```
+@InProceedings{Ahn_2025_WACV,
+    author    = {Ahn, Suhyun and Park, Wonjung and Cho, Jihoon and Park, Jinah},
+    title     = {Volumetric Conditioning Module to Control Pretrained Diffusion Models for 3D Medical Images},
+    booktitle = {Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {February},
+    year      = {2025},
+    pages     = {85-95}
+}
+```
